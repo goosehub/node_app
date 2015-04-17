@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
+{	title:	'Cleaning Supplies'
+supplies:	['mop', 'broom', 'duster']	};
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('info', { title: 'Express' });
