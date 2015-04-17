@@ -1,0 +1,47 @@
+<%= include header.html %>
+
+<div class="page-wrapper">
+
+	<div class="row">
+	  <div class="col-md-4">
+
+	      <div class="jumbotron">
+	        <h1>Hello, world!</h1>
+	        <p>This is the left div</p>
+	        <p><a class="btn btn-primary btn-lg" href="../" role="button">Return to home page</a></p>
+	      </div>
+
+	  </div>
+	  <div class="col-md-4">
+
+		<h1>This is the center div</h1>
+	    <img class="example_image" src="images/image.jpg" />
+	    <hr/>
+	    <div class="btn-group" role="group" aria-label="...">
+	      <button type="button" class="btn btn-default">Left</button>
+	      <button type="button" class="btn btn-primary">Middle</button>
+	      <button type="button" class="btn btn-success">Right</button>
+	    </div>
+
+	  </div>
+	  <div class="col-md-4">
+
+	    <h2 class="text-right">Right div</h2>
+	    <hr/>
+		<blockquote class="blockquote-reverse">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		</blockquote>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		  Click me
+		</button>
+		<div class="collapse" id="collapseExample">
+		  <div class="well">
+		    Now you see me!
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+</div>
+
+<%= include footer.html %>
