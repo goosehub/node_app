@@ -1,6 +1,4 @@
-<%= include header.html %>
-
-<%= title %>
+<%= include header.ejs %>
 
 <div class="page-wrapper">
 
@@ -11,12 +9,17 @@
 	        <h1>Hello, world!</h1>
 	        <p>This is the left div</p>
 	        <p><a class="btn btn-primary btn-lg" href="../" role="button">Return to home page</a></p>
+	        <% for(var i=0; i<supplies.length; i++) {%>
+	           <li><%= supplies[i] %></li>
+	        <% } %>
 	      </div>
 
 	  </div>
 	  <div class="col-md-4">
 
-		<h1>This is the center div</h1>
+		<h1>
+			<%= bar %>
+		</h1>
 	    <img class="example_image" src="images/image.jpg" />
 	    <hr/>
 	    <div class="btn-group" role="group" aria-label="...">
@@ -48,4 +51,4 @@
 	</div>
 </div>
 
-<%= include footer.html %>
+<%= include footer.ejs %>
